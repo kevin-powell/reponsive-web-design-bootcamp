@@ -48,7 +48,7 @@ header {
     padding: 2em 0;
 }
 
-@media (max-width: 675px) {
+@media only screen and (max-width: 675px) {
     .container-nav {
         flex-direction: column;
     }
@@ -91,7 +91,7 @@ nav a:focus {
     color: #707070;
 }
 
-@media (max-width: 675px) {
+@media only screen and (max-width: 675px) {
     nav ul {
         flex-direction: column;
     }
