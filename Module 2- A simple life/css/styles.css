@@ -12,15 +12,45 @@ body {
 /* =================
 Typography
 ================= */
+img{
+    
+    max-width: 100%;
+    display: block;
+    
+   
+   
+}
 
-h1 {
+h1, h2, h3 {
     font-family: 'Lora', serif;
     font-weight: 400;
     color: #143774;
+    margin-top: 0;
+}
+
+
+
+h1 {
     font-size: 2rem;
     margin: 0;
 }
+a {
+    color: #1792d2;
+    text-decoration: none;
+}
 
+a:hover,
+a:focus{
+    color: #143774;
+    
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+/* h1 subtitle ---*/
 .subtitle {
     font-weight: 700;
     color: #1792d2;
@@ -28,6 +58,28 @@ h1 {
     margin: 0;
 }
 
+.article-title{
+    font-size: 1.5rem;
+}
+
+.article-readmore:hover,
+.article-info:focus{
+    font-size: .875rem;
+    color: #143774;
+    text-decoration: underline;
+
+}
+.article-readmore{
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: bold;
+    
+
+}
+.article-info{
+    font-size: .875rem;
+    margin: 2em 0;
+}
 /* =================
 Layout
 ================= */
@@ -38,24 +90,44 @@ Layout
     margin: 0 auto;
 }
 
-.container-nav {
+.container-flex{
     display: flex;
     justify-content: space-between;
 }
 
 header {
     background: #f8f8f8;
-    padding: 2em 0;
+    padding: 2em ;
+    text-align: center;
+    margin-bottom: 3em;
+
+}
+footer {
+    background:#707070;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 3em 0;
+    font-weight: bold;
+}
+
+.sidebar{
+    margin: 1rem 2rem;
 }
 
 @media (max-width: 675px) {
-    .container-nav {
+    .container-flex{
         flex-direction: column;
     }
-    
-    header {
-        text-align: center;
+    main {
+        width: 75%;
     }
+    
+    aside {
+        width: 20%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
+   
 }
 
 /* navigation */
@@ -99,4 +171,55 @@ nav a:focus {
     nav li {
         margin: .5em 0;
     }
+}
+.article-featured{
+    border-bottom: #707070 1px solid;
+    padding-bottom: 2em;
+    margin-bottom:  2em;
+   
+}
+
+.article-recent{
+    display: flex;
+    flex-direction: column;
+}
+.article-recent-main{
+    order: 2;
+    margin-bottom: 2em;
+}
+.article-recent-secondary{
+    order: 1;
+}
+@media (min-width: 675px) {
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .article-recent-main {
+        width: 68%;
+    }
+    
+    .article-recent-secondary {
+        width: 30%;
+    }
+    
+    
+}
+.sidebar-widget{
+ border:  10px solid #efefef;
+ margin-bottom: 1em;
+ padding: 0.5;
+}
+    
+.widget-recent-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child {
+    border: 0;
+    margin: 0;
 }
