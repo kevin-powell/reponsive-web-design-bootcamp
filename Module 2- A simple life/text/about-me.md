@@ -14,4 +14,3 @@ It wasn't easy at all, but everything around me was in such a bad place, I didn'
 Now that I'm living a simple life, things are so much better. I'm less stressed, enjoy life and work more, and I have more free time to enjoy.
 
 With how much it turned my life around, I felt like I had no choice but to start sharing how I did it, and how others can benefit from living a simple life as well, which is why I started this site!
-
