@@ -1,5 +1,6 @@
 # Responsive Web Design Bootcamp | Scrimba course files
 Course files for the Responsive Web Design Bootcamp: https://scrimba.com/course/gresponsive/
+Link to the Adobe XD mock up :https://xd.adobe.com/spec/75d448ea-569a-4b7e-721b-9bbd3b2b97b9-03e5/grid/
 
 All files start at the same place as the first video of the project. It includes all images, plus a starting HTML and CSS files.
 
